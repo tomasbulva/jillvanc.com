@@ -1,0 +1,238 @@
+
+html,
+body
+  //height: auto
+
+/* styles in src/style directory are applied to the whole page */
+body
+  background: $background
+  color: $black
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-direction: column
+  min-height: 100vh
+
+a
+  color: $dark-gray
+
+p > a
+  color: $blue
+  text-decoration: underline
+
+
+.CookieDeclaration
+  display: none
+
+.navbar
+  background-color: transparent
+  border-top: 1px solid $grey-lighter
+
+  .navbar-menu
+    justify-content: center
+
+    .navbar-start
+      justify-content: center
+      margin: auto
+
+      .navbar-dropdown > .navbar-item
+        padding-right: 2px
+        padding-left: 2px
+        margin-right: 10px
+        margin-left: 10px
+
+section
+  width: 100%
+
+section.header
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  margin-bottom: 0
+
+  @media screen and (max-width: $tablet - 1px)
+    width: 100%
+
+    .navbar
+      display: none
+
+  .logo-container
+    margin-bottom: 40px
+
+  logo
+    flex: 1 100%
+    justify-content: center
+    margin: 30px auto 60px
+
+    > h1
+      flex: 1 100%
+      font-family: $title-font-family
+      font-weight: 300
+      color: $dark-gray
+      font-size: 30px
+      line-height: 34px
+      padding: 0
+      margin: 0
+      text-align: center
+      justify-content: center
+
+    > tagline
+      flex: 1 100%
+      font-family: $main-font-family
+      font-weight: 100
+      color: $light-gray
+      font-size: 20px
+      line-height: 1.4em
+      padding: 0
+      margin: 0
+      text-align: center
+      justify-content: center
+      display: block
+
+  // > hr
+  //   border: 0
+  //   background-color: $light-gray
+  //   height: 1px
+  //   width: $content-width
+  //   margin-bottom: 0
+  //   width: 100%;
+
+  a
+    text-transform: uppercase
+    text-decoration: none
+    font-family: $main-font-family
+    font-weight: 200
+    font-size: 0.8em
+    color: $light-gray
+    margin: 0 40px
+
+  &:hover
+    font-weight: 200
+    color: $dark-gray
+
+
+    &.active
+      font-weight: 400
+      color: $black
+
+
+
+.tabs
+  margin-top: 20px
+
+  &.main
+
+    &:not(:last-child)
+      margin-bottom: 0
+
+    ul
+      border-top: 1px $grey-light solid !important
+
+      li
+        .is-active
+          border-bottom: 1px solid $turquoise
+
+  &.work.is-second-level
+    display: none
+    margin-top: 0
+
+    &.is-active
+      display: flex
+
+    ul
+      padding-top: 0.5rem
+
+      li
+        // border-top: 2px solid $grey-light
+        // margin-top: -1px
+
+  ul
+    padding-top: 20px
+
+    li
+      a
+        border: 0
+
+      &.is-active
+        a
+          color: $grey-dark
+
+
+
+
+
+section.body
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  text-align: center
+
+  .content,
+  .field
+    text-align: left
+
+    blockquote
+      border: 0
+      padding: 0
+      font-weight: 600
+
+
+  > row
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    width: 1024px
+    width-min: 1024px
+    width-max: 1024px
+    margin-bottom: 24px
+
+
+
+
+main
+  padding: 1em
+  font-family: $main-font-family
+  text-align: center
+  margin-top: 50px
+  display: block
+
+
+header, section, footer, aside, nav, main, article, figure
+  display: block
+
+
+.footer
+  & p
+    text-align: left
+    font-size: 0.8em
+    padding-top: 5px
+    padding-left: 10px
+
+  .container
+    border-top: 1px $grey-light solid !important
+    padding-top: 20px
+
+  .tabs
+    margin-top: 0
+
+    ul
+      padding-top: 0
+      border-bottom: 0
+
+.placeholder
+  @include aspect-ratio(16, 9)
+  background-color: $grey
+
+.content h1
+  font-size: 25px
+  line-height: 30px
+  text-transform: uppercase
+  font-weight: 300
+  color: $dark-gray
+
+.content h2
+  font-size: 23px
+  line-height: 25px
+  font-weight: 300
+  color: $dark-gray
+  margin-top: 50px

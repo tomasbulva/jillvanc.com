@@ -1,0 +1,165 @@
+@import "../node_modules/bulma/sass/utilities/mixins.sass"
+
+.container
+  width: 100%
+
+$slide-width: 278px
+
+.storelink
+  font-size: 25px
+  color: #0A0A0A
+  font-weight: 400
+
+  .etsy-logo
+    color: #eb6d20
+    font-weight: 900
+
+.aprons-title
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  align-content: center
+
+  .page-title
+    width: 388px
+    height: 133px
+
+    +mobile
+      width: 194px
+      height: 66px
+
+  .page-subtitle
+    width: 414px
+    height: 21px
+
+    +mobile
+      width: 214px
+      height: 10px
+
+.image-gallery
+  height: 478px
+  width: $slide-width
+  position: relative
+  margin: 0 auto
+  overflow: hidden
+
+  .image-gallery-animation-wrapper
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: flex-start
+    flex-wrap: nowrap
+    height: 100%
+    width: auto
+    margin-right: auto
+
+    &.is-active,
+    &:hover
+      animation: slide 7s linear 0s infinite
+
+    div
+      flex-basis: 100%
+      flex-shrink: 0
+      width: $slide-width
+      height: 478px
+      background-position: 50% 13%
+      background-size: 215% auto
+      background-repeat: no-repeat
+
+      &.cover
+        background-position: center
+        background-size: cover
+
+
+.button-column
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 150px
+
+  .buy-button
+    background: #EB6D20
+    border-radius: 11px
+    display: flex
+    flex-direction: row
+
+    &:hover
+      background: rgba(#EB6D20, 0.8)
+
+    a
+      font-style: normal
+      font-weight: normal
+      font-size: 25px
+      line-height: 29px
+      color: #EFEFEF
+
+      > span
+        display: block
+        padding: 20px 35px
+
+        .etsy-logo
+          font-style: bold
+          color: #FFFFFF
+
+
+section
+  &.our-story
+    .container
+      border-top: 1px solid $grey-lighter
+
+.our-story-column
+  h1
+    font-style: normal
+    font-weight: normal
+    font-size: 48px
+    line-height: 56px
+    color: #0A0A0A
+    margin-top: 40px
+    margin-bottom: 65px
+
+  p
+    text-align: left
+    margin-bottom: 20px
+
+  img
+    margin: 40px 0
+
+  .image-label
+    display: block
+    margin-top: -20px
+    margin-bottom: 40px
+
+@keyframes slide
+  7.999%
+    $slide-pos: $slide-width * 0
+    margin-left: 0 - $slide-pos
+    margin-right: $slide-pos
+  8%
+    $slide-pos: $slide-width * 1
+    margin-left: 0 - $slide-pos
+    margin-right: $slide-pos
+  34.999%
+    $slide-pos: $slide-width * 1
+    margin-left: 0 - $slide-pos
+    margin-right: $slide-pos
+  35%
+    $slide-pos: $slide-width * 2
+    margin-left: 0 - $slide-pos
+    margin-right: $slide-pos
+  64.999%
+    $slide-pos: $slide-width * 2
+    margin-left: 0 - $slide-pos
+    margin-right: $slide-pos
+  65%
+    $slide-pos: $slide-width * 3
+    margin-left: 0 - $slide-pos
+    margin-right: $slide-pos
+  89.999%
+    $slide-pos: $slide-width * 3
+    margin-left: 0 - $slide-pos
+    margin-right: $slide-pos
+  90%
+    $slide-pos: $slide-width * 0
+    margin-left: 0 - $slide-pos
+    margin-right: $slide-pos

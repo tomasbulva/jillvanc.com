@@ -1,0 +1,45 @@
+.video
+  @include aspect-ratio(16, 9)
+
+  &.iphone
+    @include aspect-ratio(9, 12)
+
+.body.work
+  padding-top: 0
+  width: 100%
+
+  .container
+    width: 100%
+
+    .video
+      width: 100%
+      height: auto
+
+  @media screen and (max-width: $tablet - 1px)
+    width: 100%
+
+    .container
+      width: 100%
+
+      .columns
+        width: 100%
+
+        .column
+          width: 100%
+
+          .video
+            width: 100%
+
+  &.button-menu > .container > .columns > .column
+    .static
+      display: flex
+
+    .moving
+      display: none
+
+  &.button-menu > .container > .columns > .column:hover
+    .static
+      display: none
+
+    .moving
+      display: flex

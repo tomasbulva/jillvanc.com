@@ -1,0 +1,8 @@
+[Unit]
+Description=Jill Server
+
+[Service]
+ExecStart=/bin/bash -c 'echo "[`date`] Jill Server is Starting" ; echo "[`date`] Jill Server is Starting" >> /var/log/jill-server.log ; node --version >> /var/log/jill-server.log ; export PORT=80 ; export NODE_ENV=production ; node /home/ubuntu/jill-server/bin/www >> /var/log/jill-server.log 2>&1 ; echo "jill-server service started at `date +"%F %T.%N"`" | mail -s "Jill- server Service Started" tom.bulva@gmail.com'
+ExecStopPost=/bin/bash -c 'rm /var/run/jill-server.pid ; /bin/echo "[`date`] Jill server Stopping" >> /var/log/jill-server.log'
+
+Restart=always

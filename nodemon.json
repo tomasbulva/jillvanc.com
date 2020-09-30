@@ -1,0 +1,6 @@
+{
+  "events": {
+    "restart": "sleep 0.5 ; curl -i -H \"Content-Type: application/json\" -H \"Cache-Control: no-cache\" -X POST -d '{\"files\":[\"$FILENAME\"]}' http://localhost:35729/changed"
+  },
+  "ext": "js,html,sass"
+}
