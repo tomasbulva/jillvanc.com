@@ -1,0 +1,120 @@
+{
+  "basics": {
+    "name": "JILL VANC",
+    "label": "Motion Designer",
+    "picture": "https://media-exp1.licdn.com/media/AAIA_wDGAAAAAQAAAAAAAAyeAAAAJGQxZTRkYTQ1LWRlNzktNDZhYi05YWE5LWMxODYzYmJjOTE2OA.jpg",
+    "email": "jillvanc@gmail.com",
+    "phone": "+1 (630) 362-8867",
+    "website": "http://jillvanc.com",
+    "summary": "",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Los Angeles",
+      "countryCode": "USA",
+      "region": "CA"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "linkedin.com/jill-vanc-1b400a11",
+        "url": "https://www.linkedin.com/in/jill-vanc-1b400a11/"
+      },
+      {
+        "network": "instagram",
+        "username": "instagram.com/jillvanc",
+        "url": "https://www.instagram.com/jillvanc/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "TBWA\\Media Arts Lab",
+      "position": "Animator",
+      "website": "",
+      "startDate": "2015-01-01",
+      "endDate": "2017-01-01",
+      "summary": "Localized designs and animations for various digital campaigns, animated digital banners, pre-roll, itunes promotional videos and created motion tests. ",
+      "highlights": []
+    },
+    {
+      "company": "Richter Media Group",
+      "position": "Motion Graphic Designer",
+      "website": "",
+      "startDate": "2014-06-01",
+      "endDate": "2014-12-01",
+      "summary": "Designed and animated a series of explainer videos for a number of clients",
+      "highlights": []
+    },
+    {
+      "company": "Sarofsky",
+      "position": "Freelance Motion Graphic Designer",
+      "website": "",
+      "startDate": "2014-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Created motion tests for the rebranding of USAA Insurance and animated end tag for an Illinois Lottery commercial.",
+      "highlights": []
+    },
+    {
+      "company": "Ogilvy & Mather",
+      "position": "Motion Graphic Designer",
+      "website": "",
+      "startDate": "2008-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Animated graphics, shot video content and edited promotional videos for new business pitches, sizzle reels, animatics and commercials for clients such as SC Johnson, Unilever, Popmoney, UPS, CDW, Kimberly Clark and Arrow Electronics.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "BA from Columbia College",
+      "area": "Film & Video",
+      "studyType": "",
+      "startDate": "2003-01-01",
+      "endDate": "2007-01-01",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Skillset",
+      "level": "",
+      "keywords": [
+        "Motion Graphics",
+        "Kinetic Typography",
+        "Stop Motion Animation",
+        "Keying",
+        "Video Editing",
+        "Design"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "",
+      "keywords": [
+        "After Effects",
+        "Illustrator",
+        "Photoshop",
+        "Premiere Pro",
+        "Final Cut Pro",
+        "Keynote"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native or bilingual proficiency"
+    },
+    {
+      "language": "Czech",
+      "fluency": "Native or bilingual proficiency"
+    }
+  ],
+  "interests": [],
+  "references": []
+}
