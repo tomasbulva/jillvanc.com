@@ -14,7 +14,7 @@ echo "transfering files"
 rsync -rave "ssh -i ${key}" $PWD/* ubuntu@34.213.229.241:~/jill-server/ --exclude='node_modules';
 
 echo "installing"
-ssh ubuntu@34.213.229.241  -q <<'ENDSSH'
+ssh -i ${key} ubuntu@34.213.229.241 -q <<'ENDSSH'
   cd ~/jill-server/
 
   if [ -d "node_modules" ]; then
